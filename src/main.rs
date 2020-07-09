@@ -1,3 +1,6 @@
+mod order;
+
 fn main(){
-    println!("Hello");
+    let d: order::Order = order::Order::new(String::from("first"), String::from("order # 1"), 20.0);
+    println!("{}", d);
 }
